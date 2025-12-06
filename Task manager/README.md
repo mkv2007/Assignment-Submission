@@ -13,9 +13,3 @@ It allows you to add, list, update, delete, and mark tasks as done.
 - Update a task's title  
 - Mark a task as DONE  
 - Stores data in a local `tasks.json` file  
-
----
-
-## 📁 Project Files
-
-
