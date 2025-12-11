@@ -27,7 +27,7 @@ Install dependencies:
 
 -npm install bcrypt jsonwebtoken dotenv
 
-Run Sever in the Terminal
+Run Sever in the Terminal:
 -node server.js
 
 ##Process
