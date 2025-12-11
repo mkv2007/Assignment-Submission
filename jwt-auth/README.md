@@ -35,15 +35,16 @@ node server.js
 
 open this link and register 
 
-
 Expected responce : Registration Successful (or) Email already registered
 
 -http://localhost:3000/login?email=test@gmail.com&password=123
 
 Login into this link then you will be given a JWT token copy that
+
 Expected response : (Returns a unique JWT token)
 
 -http://localhost:3000/invoke?token=PASTE_YOUR_TOKEN_HERE
 
 Paste the JWT token in the place of PASTE_YOUR_TOKEN_HERE in the above link
+
 Expected Response : Function Invoked Successfully (or) Access Denied
