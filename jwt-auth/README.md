@@ -28,9 +28,10 @@ Install dependencies:
 -npm install bcrypt jsonwebtoken dotenv
 
 Run Sever in the Terminal:
+
 -node server.js
 
-##Process
+## 📌 Process
 
 -http://localhost:3000/register?email=test@gmail.com&password=123
 
