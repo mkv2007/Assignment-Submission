@@ -25,9 +25,10 @@ It allows users to register, log in to receive a JWT, and access a protected rou
 
 Install dependencies:
 
-npm install bcrypt jsonwebtoken dotenv
+-npm install bcrypt jsonwebtoken dotenv
 
-node server.js
+Run Sever in the Terminal
+-node server.js
 
 ##Process
 
