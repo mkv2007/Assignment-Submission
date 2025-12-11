@@ -34,6 +34,8 @@ node server.js
 -http://localhost:3000/register?email=test@gmail.com&password=123
 
 open this link and register 
+
+
 Expected responce : Registration Successful (or) Email already registered
 
 -http://localhost:3000/login?email=test@gmail.com&password=123
