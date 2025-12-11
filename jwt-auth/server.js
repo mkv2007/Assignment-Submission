@@ -1,4 +1,3 @@
-// server.js
 const http = require("http");
 const url = require("url");
 const bcrypt = require("bcrypt");
@@ -10,8 +9,6 @@ if (!JWT_SECRET) {
   console.log("Missing JWT_SECRET in .env file");
   process.exit(1);
 }
-
-// in-memory users storage: [{email:"", passwordHash:""}]
 const users = [];
 
 function send(res, code, message) {
@@ -23,9 +20,6 @@ const server = http.createServer(async (req, res) => {
   const parsedUrl = url.parse(req.url, true);
   const { pathname, query } = parsedUrl;
 
-  // -----------------------------
-  // REGISTER
-  // -----------------------------
   if (pathname === "/register") {
     const { email, password } = query;
 
@@ -39,10 +33,6 @@ const server = http.createServer(async (req, res) => {
 
     return send(res, 200, "Registration successful");
   }
-
-  // -----------------------------
-  // LOGIN
-  // -----------------------------
   if (pathname === "/login") {
     const { email, password } = query;
 
@@ -60,9 +50,6 @@ const server = http.createServer(async (req, res) => {
     return send(res, 200, token);
   }
 
-  // -----------------------------
-  // INVOKE (protected route)
-  // -----------------------------
   if (pathname === "/invoke") {
     const { token } = query;
 
@@ -76,10 +63,10 @@ const server = http.createServer(async (req, res) => {
     }
   }
 
-  // if unknown route
   send(res, 404, "Route not found");
 });
 
 server.listen(3000, () => {
   console.log("Server running at http://localhost:3000");
 });
+
